@@ -80,8 +80,8 @@ Allure
 
 
 #### Упавший тест в отчёте Allure
-Пример "упавшего" теста.
-В отчёт добавлены файл с перехваченным трафиком и скриншот, созданный при падении теста.
+Пример "упавшего" теста.<br/>
+В отчёт добавлены файл с перехваченным трафиком и скриншот, созданный при падении теста.<br/>
 Из отчёта видно, что мы ожидаем увидеть в пункте отправки Бостон, а видим - Мехико, что полностью соответствует коду данного теста:
 <https://github.com/MariaOskar/OtusJDI/blob/master/src/test/java/com/blazedemo/test/JDITest.java#L66>
 ```Java
@@ -106,13 +106,16 @@ Allure
 
 
 #### Успешный тест в отчёте Allure
-
+Пример успешно прошедшего теста.<br/>
+Справа мы видим описание теста, указанное при интеграции Allure, описание шагов и инициализации теста.<br/>
+Также в отчёте имеются конкретные значения, которые передавались в методы при запуске данного теста.<br/>
+Детально интеграцию отчётов Allure в данный проект можно посмотреть в коммите по ссылке: <https://github.com/MariaOskar/OtusJDI/commit/adabcd5103d9c89c83a291860934951825446ad8>
 ![Успешный тест в отчёте Allure](https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_Allure_03.JPG)
 <https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_Allure_03.JPG>
 
 
 #### Вложения в отчёте Allure
-
+Здесь продемонстрировано наличие добавленных в отчёт вложений (скриншоты и трафик)
 ![Вложения в отчёте Allure](https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_Allure_04.JPG)
 <https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_Allure_04.JPG>
 
