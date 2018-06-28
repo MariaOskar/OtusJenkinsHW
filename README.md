@@ -4,13 +4,14 @@
 Jenkins
 =======
 
-#### Список проектов
+### Список проектов
 
 ![Список проектов](https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_01.JPG)
 [jenkins_projects_list]: https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_01.JPG
 
 
-#### Проект с использованием отчетов Allure
+### Проект с использованием отчетов Allure
+Данный проект имеет два теста, один из которых нарочно создан "неудачным" для проверки работы TestListener'а(создание отчётов и перехват трафика)
 
 ![Проект с использованием отчетов Allure](https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_02.JPG)
 [jenkins_project_with_allure]: https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_02.JPG
@@ -22,11 +23,11 @@ Jenkins
 ![Отображение вывода в консоль при запуске задания в Jenkins](https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_03_01.JPG)
 [jenkins_output_console_2]: https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_03_01.JPG
 
-Вывод первого теста
+Вывод первого теста (успешный тест)
 ![Отображение вывода в консоль при запуске задания в Jenkins](https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_03_02.JPG)
 [jenkins_output_console_2]: https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_03_02.JPG
 
-Вывод второго теста, запуск генерации отчетов Allure
+Вывод второго(неудачного) теста, запуск генерации отчетов Allure
 ![Отображение вывода в консоль при запуске задания в Jenkins](https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_03_03.JPG)
 [jenkins_output_console_3]: https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_03_03.JPG
 
@@ -64,6 +65,7 @@ Allure
 * В настройках был указан незапущенный Selenium Grid
 * Теста запускался c кодировкой отличной от UTF-8
 * Была незначительно превышена допустимая разница во времени
+
 После исправления всех проблем все тесты стали успешно проходить, что видно в истории на данном скрине.
 ![Настройки инструментов](https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_06.JPG)
 [jenkins_project_with_history]: https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_06.JPG
