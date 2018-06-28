@@ -58,6 +58,13 @@ Allure
 ![Настройки инструментов](https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_05_02.JPG)
 [jenkins_tools_settings_2]: https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_05_02.JPG
 
+#### Проект с историей
+
+Данный проект при первом запуске имел много проблем:
+* В настройках был указан незапущенный Selenium Grid
+* Теста запускался c кодировкой отличной от UTF-8
+* Была незначительно превышена допустимая разница во времени
+После исправления всех проблем все тесты стали успешно проходить, что видно в истории на данном скрине.
 ![Настройки инструментов](https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_06.JPG)
 [jenkins_project_with_history]: https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_06.JPG
 
