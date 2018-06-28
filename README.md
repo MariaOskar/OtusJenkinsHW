@@ -80,6 +80,26 @@ Allure
 
 
 #### Упавший тест в отчёте Allure
+Пример "упавшего" теста.
+В отчёт добавлены файл с перехваченным трафиком и скриншот, созданный при падении теста.
+Из отчёта видно, что мы ожидаем увидеть в пункте отправки Бостон, а видим - Мехико, что полностью соответствует коду данного теста:
+<https://github.com/MariaOskar/OtusJDI/blob/master/src/test/java/com/blazedemo/test/JDITest.java#L66>
+```Java
+    @Test
+    public void negativeTest(){
+        choicePage.open();
+        choicePage
+                .selectFrom(DepartureEnum.BOSTON.city())
+                .selectTo(DestinationEnum.BUENOS_AIRES.city())
+                .submit();
+        reservePage
+                .checkOpenedPage()
+                .checkFromPortValue(DepartureEnum.MEXICO_CITY.city())
+                .checkToPortValue(DestinationEnum.BERLIN.city())
+        ;
+    }
+```
+
 
 ![Упавший тест в отчёте Allure](https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_Allure_02.JPG)
 [allure_negative_test]: https://raw.githubusercontent.com/MariaOskar/OtusJenkinsHW/master/Jenkins_Allure_02.JPG
